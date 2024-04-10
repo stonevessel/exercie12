@@ -27,7 +27,7 @@ class Queue<E> {
             throw new StackEmptyException();
         }
 
-        E returnElement = elements[index - 1];
+        E returnElement = elements[2 - index];
         index--;
         return returnElement;
     }
